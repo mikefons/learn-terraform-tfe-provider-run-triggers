@@ -70,7 +70,7 @@ resource "tfe_variable" "vault_organization" {
 
 resource "tfe_variable" "vault_google_credentials" {
   key          = "GOOGLE_CREDENTIALS"
-  value        = file("assets/gcp-creds.json")
+  value        = var.GOOGLE_CREDENTIALS
   category     = "env"
   workspace_id = tfe_workspace.vault.id
   description  = "Key for Service account"

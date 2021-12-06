@@ -12,17 +12,17 @@ variable "vcs_oauth_token_id" {
 
 variable "k8s_repo_name" {
   description = "The GH repo where the k8s configuration lives"
-  default     = "REPLACE_ME/learn-terraform-pipelines-k8s"
+  default     = "mikefons/learn-terraform-pipelines-k8s"
 }
 
 variable "consul_repo_name" {
   description = "The GH repo where the Consul configuration lives"
-  default     = "REPLACE_ME/learn-terraform-pipelines-consul"
+  default     = "mikefons/learn-terraform-pipelines-consul"
 }
 
 variable "vault_repo_name" {
   description = "The GH repo where the Vault configuration lives"
-  default     = "REPLACE_ME/learn-terraform-pipelines-vault"
+  default     = "mikefons/learn-terraform-pipelines-vault"
 }
 
 # TFC Organization and team names
@@ -59,17 +59,17 @@ variable "tfc_k8s_workspace_name" {
 
 variable "k8s_username" {
   description = "The Google Project that these workspaces will deploy to"
-  default     = "hashicorp"
+  default     = "intfcvars"
 }
 
 variable "k8s_password" {
   description = "Password variable value for k8s workspace"
-  default     = "infrastructurepipelines"
+  default     = "intfcvars"
 }
 
 variable "k8s_cluster_name" {
   description = "ClusterName variable value for k8s workspace"
-  default     = "tfc-pipelines"
+  default     = "intfcvars"
 }
 
 variable "region" {
