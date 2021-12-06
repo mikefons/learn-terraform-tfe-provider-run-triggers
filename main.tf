@@ -1,4 +1,11 @@
 terraform {
+  backend "remote" {
+    organization = "mfonseca-org"
+
+    workspaces {
+      name = "learn-terraform-tfe-provider-run-triggers"
+    }
+  }
   required_providers {
     tfe = {
       source  = "hashicorp/tfe"
