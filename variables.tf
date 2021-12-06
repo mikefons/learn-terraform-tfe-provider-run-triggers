@@ -98,3 +98,9 @@ variable "tfc_vault_workspace_name" {
   description = "Vault workspace name"
   default     = "learn-terraform-pipelines-vault"
 }
+
+
+variable "GOOGLE_CREDENTIALS" {
+  description = "GOOGLE_CREDENTIALS"
+  default     = "intfcvars"
+}

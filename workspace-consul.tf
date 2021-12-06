@@ -86,7 +86,7 @@ resource "tfe_variable" "consul_release_name" {
 
 resource "tfe_variable" "consul_google_credentials" {
   key          = "GOOGLE_CREDENTIALS"
-  value        = file("assets/gcp-creds.json")
+  value        = var.GOOGLE_CREDENTIALS
   category     = "env"
   workspace_id = tfe_workspace.consul.id
   description  = "Key for Service account"

@@ -102,7 +102,7 @@ resource "tfe_variable" "k8s_region" {
 
 resource "tfe_variable" "k8s_google_credentials" {
   key          = "GOOGLE_CREDENTIALS"
-  value        = file("assets/gcp-creds.json")
+  value        = var.GOOGLE_CREDENTIALS
   category     = "env"
   workspace_id = tfe_workspace.k8s.id
   description  = "Key for Service account"
